@@ -1,3 +1,5 @@
 [user]
-	email = 1652@holbertonschool.com
+	email = 1652@holbertonschool
 	name = Mfeliciano778
+[credential]
+	helper = store
