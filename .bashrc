@@ -95,7 +95,7 @@ alias l='ls -CF'
 # My Aliases
 alias e='emacs'
 alias ga='git add'
-alias gc='git commit'
+alias gc='git commit -m'
 alias gp='git push' 
 
 # Add an "alert" alias for long running commands.  Use like so:
