@@ -15,5 +15,5 @@ then
 else
 	echo "Holberton School"
 fi
-i=$i+1
+let i+=1
 done

@@ -19,5 +19,5 @@ then
 else
 	echo "$i"
 fi
-i=$i+1
+let i+=1
 done

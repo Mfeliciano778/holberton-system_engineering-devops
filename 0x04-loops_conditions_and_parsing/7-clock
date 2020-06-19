@@ -13,7 +13,7 @@ do
 			echo "Hour: $hour"
 		fi
 		echo "$min"
-		min=$min+1
+		let min+=1
 	done
-hour=$hour+1
+let hour+=1
 done
