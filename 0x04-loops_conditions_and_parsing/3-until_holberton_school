@@ -9,7 +9,7 @@ while [ "$dun" != "false" ]; do
 	until [ $i -ge 10 ]; do
 	
 		echo "Holberton School"
-		i=$i+1
+		let i+=1
 	done
 	dun="false"
 done
