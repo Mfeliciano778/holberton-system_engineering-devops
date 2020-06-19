@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Script that displays Holberton School 10 times
+
+dun="true"
+while [ "$dun" != "false" ]; do
+	i="0"
+
+
+	until [ $i -ge 10 ]; do
+	
+		echo "Holberton School"
+		i=$[$i+1]
+	done
+	dun="false"
+done
