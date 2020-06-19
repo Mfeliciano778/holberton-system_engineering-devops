@@ -5,8 +5,8 @@ i="1"
 
 while [ $i -le 100 ]
 do
-fop=$i % 3
-bop=$i % 5
+let fop=$i%3
+let bop=$i%5
 if [ "$fop" = "0" ] && [ "$bop" = "0" ]
 then
 	echo "FizzBuzz"
