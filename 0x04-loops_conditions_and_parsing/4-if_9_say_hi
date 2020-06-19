@@ -11,5 +11,5 @@ then
 	echo "Hi"
 fi
 echo "Holberton School"
-i=$[$i+1]
+i=$i+1
 done
