@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #  Bash script that displays to infinity and beyond, wehn recieving a SIGTERM
 #+ displays I am invincible
+trap "echo 'I am invincible!!!'" SIGINT SIGTERM
+
 while true
 do
 	echo "To infinity and beyond"
 	sleep 2
 done
-trap "echo 'I am invincible!!!'" SIGINT SIGTERM
