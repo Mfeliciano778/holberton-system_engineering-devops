@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#  Bash script that displays to infinity and beyond, wehn recieving a SIGTERM
+#+ displays I am invincible
 while true
 do
 	echo "To infinity and beyond"
