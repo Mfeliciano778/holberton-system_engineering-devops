@@ -3,21 +3,17 @@
 
 i="1"
 
-while [ $i -le 100 ]
-do
-let fop=$i%3
-let bop=$i%5
-if [ "$fop" = "0" ] && [ "$bop" = "0" ]
-then
-	echo "FizzBuzz"
-elif [ "$fop" = "0" ]
-then
-	echo "Fizz"
-elif [ "$bop" = "0" ]
-then
-	echo "Buzz"
-else
-	echo "$i"
-fi
-let i+=1
+while [ $i -le 100 ]; do
+	let fop=$i%3
+	let bop=$i%5
+	if [ "$fop" = "0" ] && [ "$bop" = "0" ]; then
+		echo "FizzBuzz"
+	elif [ "$fop" = "0" ]; then
+		echo "Fizz"
+	elif [ "$bop" = "0" ]; then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+	let i+=1
 done
