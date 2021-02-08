@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# script that displays specific strings
 i=0
 trap "echo 'I am invincible!!!'" SIGTERM
 while [ $i -eq 0 ]
