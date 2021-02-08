@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+i=$(pgrep -f infinity)
+kill -9 "$i"
