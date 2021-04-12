@@ -5,11 +5,16 @@ sudo add-apt-repository -y ppa:vbernat/haproxy-1.6
 sudo apt-get -y update
 sudo apt-get -y install haproxy=1.6.\*
 
-haprox_config="#--
+haprox_config="listen www
+#--
+#Frontend
+#--
 #frontend http_front
 bind *:80
-stats uri /haproxy?stats
-default_backend http_rear
+#stats uri /haproxy?stats
+#default_backend http_rear
+#--
+#Backend
 #--
 #backend http_rear
 balance roundrobin
