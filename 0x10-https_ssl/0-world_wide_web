@@ -10,8 +10,8 @@ then
     dig_awk "$1" "$2"
 else
     dig_awk "$1" "www"
+    dig_awk "$1" "lb-01"
     dig_awk "$1" "web-01"
     dig_awk "$1" "web-02"
-    dig_awk "$1" "lb-01"
 fi
 exit 0
