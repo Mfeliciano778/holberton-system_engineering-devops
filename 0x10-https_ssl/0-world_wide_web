@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # func display information about subdomains
 function dig_awk {
-    dig "$2.$1" | awk '/ANSWER SECTION:/ {getline; print "The subdomain '$2' is a " $4 " record and points to " $5}'
+    pointer="$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk '{printf $5}')"
+    record="$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk '{printf $4}')"
+    printf "The subdomain %s is a %s record and points to %s\n" "$2" "$record" "$pointer"
     return 0
 }
 
