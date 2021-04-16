@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# func display information about subdomains
+function dig_awk {
+    dig "$2.$1" | awk '/ANSWER SECTION:/ {getline; print "The subdomain '$2' is a " $4 " record and points to " $5}'
+    return 0
+}
+
+if [ $# -eq 2 ]
+then
+    dig_awk "$1" "$2"
+else
+    dig_awk "$1" "www"
+    dig_awk "$1" "web-01"
+    dig_awk "$1" "web-02"
+    dig_awk "$1" "lb-01"
+fi
+exit 0
