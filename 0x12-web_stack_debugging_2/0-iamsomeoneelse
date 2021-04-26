@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# runs whoami with a possible argument
+sudo -u "$1" whoami
