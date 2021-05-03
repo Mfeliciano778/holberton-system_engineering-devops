@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''takes an id for employee and return tasks completed'''
-import requests, sys
+import requests
+import sys
 
 
 if __name__ == "__main__":

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 '''takes an id for employee and return tasks completed'''
-import json, requests, sys
+import json
+import requests
+import sys
 
 
 if __name__ == "__main__":
@@ -17,8 +19,8 @@ if __name__ == "__main__":
     new_dict = {id: []}
     for task in tasks_dict:
         new_dict[id].append({"task": task['title'],
-                                   "completed": task['completed'],
-                                   "username": name})
+                             "completed": task['completed'],
+                             "username": name})
 
     filename = id + '.json'
     with open(filename, 'w+') as f:
