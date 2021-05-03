@@ -27,4 +27,4 @@ if __name__ == "__main__":
         employee_dict['name'], completed_tasks, total_tasks))
 
     for item in name_of_tasks:
-        print("\t{}".format(item['title']))
+        print("\t {}".format(item['title']))
