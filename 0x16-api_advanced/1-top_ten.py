@@ -11,9 +11,6 @@ def top_ten(subreddit):
 
     r_sub = requests.get(url, headers=user_agent, params=amount,
                          allow_redirects=False)
-    if r_sub.status_code != 200:
-        print("None")
-        return
     try:
         r_sub = r_sub.json()
         for kid in r_sub.get("data").get("children"):
