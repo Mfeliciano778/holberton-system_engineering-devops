@@ -14,6 +14,9 @@ def top_ten(subreddit):
     if r_sub.status_code != 200:
         print("None")
         return
-    r_sub = r_sub.json()
-    for kid in r_sub.get("data").get("children"):
-        print(kid.get("data").get("title"))
+    try:
+        r_sub = r_sub.json()
+        for kid in r_sub.get("data").get("children"):
+            print(kid.get("data").get("title"))
+    except:
+        print("None")
