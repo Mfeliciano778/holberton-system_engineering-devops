@@ -15,7 +15,5 @@ def top_ten(subreddit):
         print("None")
         return
     r_sub = r_sub.json()
-    r_sub = requests.get(url, headers=user_agent, params=amount,
-                         allow_redirects=False).json()
     for kid in r_sub.get("data").get("children"):
         print(kid.get("data").get("title"))
